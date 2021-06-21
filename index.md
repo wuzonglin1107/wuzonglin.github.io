@@ -1,37 +1,121 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>瑞腾教育培训中心</title>
+  
+  <link rel="stylesheet" type="text/css" href="css/main.css"/>
+  
+  
+  <script type="text/javascript">
+    function ShowMenu(li){
+      let submenu = li.getElementsByTagName("ul")[0];
+      submenu.style.display = "block"; /*使用js代码来控制二级菜单的显示和隐藏*/
+    }
+    function HideMenu(li){
+      let submenu = li.getElementsByTagName("ul")[0];
+      submenu.style.display = "none";
+    }
+  </script>
+  <link rel="shortcut icon" href="images/2.ico">
+  <script type="text/javascript">
+    //设为首页
+    function SetHome(url) {
+      if (document.all) {
+        document.body.style.behavior = 'url(#default#homepage)';
+        document.body.setHomePage(url);
+      } else {
+        alert("您好,您的浏览器不支持自动设置页面为首页功能,请您手动在浏览器里设置该页面为首页!");
+      }
+    }
+  </script>
+</head>
 
-You can use the [editor on GitHub](https://github.com/wuzonglin1107/wuzonglin.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<body>
+<div class="header">
+  <a  onclick="SetHome('http://localhost:8080/webfirst/index.html')" href="javascript:void(0)" title="设为首页" style="color:white;size: 30px;">设为首页</a>
+</div>
+<iframe src="img/1.png" height="60px" width="70px"></iframe>
+<span><b>瑞腾教育培训中心</b></span><br/>
+  <div class="nav">
+    <ul>
+      <li><a href="mainpage.html">首页</a></li>
 
-### Markdown
+      <li onmouseover="ShowMenu(this)" onmouseout="HideMenu(this)">
+        <a>关于我们</a>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+        <ul>
+          <li><a href="11.html">关于我们1</a></li>
+          <li><a href="12.html">关于我们2</a></li>
+          <li><a href="13.html">关于我们3</a></li>
+        </ul>
+      </li>
 
-```markdown
-Syntax highlighted code block
+      <li onmouseover="ShowMenu(this)" onmouseout="HideMenu(this)">
+        <a>新闻资讯</a>
+        <ul>
+          <li><a href="21.html">新闻资讯1</a></li>
+          <li><a href="22.html">新闻资讯2</a></li>
+          <li><a href="23.html">新闻资讯3</a></li>
+        </ul>
+      </li>
 
-# Header 1
-## Header 2
-### Header 3
+      <li onmouseover="ShowMenu(this)" onmouseout="HideMenu(this)">
+        <a>培训课程</a>
+        <ul>
+          <li><a href="31.html">培训课程1</a></li>
+          <li><a href="32.html">培训课程2</a></li>
+          <li><a href="33.html">培训课程3</a></li>
+        </ul>
 
-- Bulleted
-- List
+      <li onmouseover="ShowMenu(this)" onmouseout="HideMenu(this)">
+        <a>校园展示</a>
+        <ul>
+          <li><a href="41.html">校园展示1</a></li>
+          <li><a href="42.html">校园展示2</a></li>
+          <li><a href="43.html">校园展示3</a></li>
+        </ul>
 
-1. Numbered
-2. List
+      <li onmouseover="ShowMenu(this)" onmouseout="HideMenu(this)">
+        <a>名师风采</a>
+        <ul>
+          <li><a href="51.html">名师风采1</a></li>
+          <li><a href="52.html">名师风采2</a></li>
+          <li><a href="53.html">名师风采3</a></li>
+        </ul>
 
-**Bold** and _Italic_ and `Code` text
+      <li onmouseover="ShowMenu(this)" onmouseout="HideMenu(this)">
+        <a>家长社区</a>
+        <ul>
+          <li><a href="61.html">家长社区1</a></li>
+          <li><a href="62.html">家长社区2</a></li>
+        </ul>
 
-[Link](url) and ![Image](src)
-```
+      <li onmouseover="ShowMenu(this)" onmouseout="HideMenu(this)">
+        <a>联系我们</a>
+        <ul>
+          <li><a href="71.html">联系我们1</a></li>
+          <li><a href="72.html">联系我们2</a></li>
+          <li><a href="73.html">联系我们3</a></li>
+        </ul>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/wuzonglin1107/wuzonglin.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+      <li onmouseover="ShowMenu(this)" onmouseout="HideMenu(this)">
+        <a>网上报名</a>
+        <ul>
+          <li><a href="81.html">网上报名1</a></li>
+          <li><a href="82.html">网上报名2</a></li>
+          <li><a href="83.html">网上报名3</a></li>
+        </ul>
+    </ul>
+  </div>
+<div  align="center" >
+  <img id="imag1"src="img/left.jpg"style="width: 100%;height: 430px;">
+</div>
+<div id="content">
+  <div id="content_left">kjkljdlkxlkmaslkmclk</div>
+  <div id="content_mid">sadasdasdasdasdas</div>
+  <div id="content_right">asdasdasdasdasd</div>
+</div>
+</body>
+</html>
